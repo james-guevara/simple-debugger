@@ -1,0 +1,20 @@
+[project]
+name = "simple-debugger"
+version = "0.1.0"
+description = "A minimal, visual terminal debugger for Python"
+requires-python = ">=3.10"
+dependencies = [
+    "textual>=0.45.0",
+    "rich>=13.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+]
+
+[project.scripts]
+simple-debugger = "simple_debugger:main"
+
+[tool.setuptools]
+py-modules = ["simple_debugger"]
