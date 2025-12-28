@@ -97,8 +97,8 @@ class DebuggerCore(bdb.Bdb):
 class CodeView(Static):
     """Displays source code with current line highlighted."""
 
-    def __init__(self):
-        super().__init__()
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
         self.current_file = None
         self.current_line = 0
 
